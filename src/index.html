@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Helloworld</title>
+	<meta name="theme-color" content="#222127">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <script src="http://47.98.48.96:8080/node/lib/node_modules/@dojo/loader/loader.js"></script> -->
+	<script src="https://cdn.bootcss.com/systemjs/0.21.0/system.src.js"></script>
+</head>
+
+<body>
+</body>
+<script>
+	SystemJS.config({
+		baseURL: 'http://47.98.48.96:8080/node/lib/node_modules/',
+		packages: {
+			'@dojo/widgets': {
+				main: 'index.js',
+				format: 'cjs',
+				defaultExtension: 'js'
+			},
+			'@dojo/widget-core': {
+				main: 'index.js',
+				format: 'cjs',
+				defaultExtension: 'js'
+			},
+			'@dojo/core': {
+				main: 'index.js',
+				format: 'cjs',
+				defaultExtension: 'js'
+			},
+			'@dojo/shim': {
+				main: 'index.js',
+				format: 'cjs',
+				defaultExtension: 'js'
+			},
+			'@dojo/has': {
+				main: 'index.js',
+				format: 'cjs',
+				defaultExtension: 'js'
+			},
+			'tslib': {
+				main: 'tslib.js',
+				format: 'cjs',
+				defaultExtension: 'js'
+			}
+		}
+	});
+</script>
+
+</html>
